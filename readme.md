@@ -1,6 +1,6 @@
 # Nesine.Com API Test
 
-Karate ve Allure Report Framework'ü kullanılarak Nesine.Com API'larının test edilmesi, Docker ile testlerin çalıştırılması ve JMeter ile performans testi script'i içerir.
+Karate ve Allure Report Framework'ü kullanılarak Nesine.Com API'larının test edilmesi, Docker ile testlerin çalıştırılması ve JMeter ile hazırlanmış performans testi script'i içerir.
 
 
 ## Proje Yapısı
