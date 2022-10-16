@@ -6,7 +6,7 @@ function fn() {
   }
   var config = {
     env: env,
-    getUri: 'https://www.nesine.com',
+  //  getUri: 'https://www.nesine.com',
   }
   if (env == 'dev') {
     // customize

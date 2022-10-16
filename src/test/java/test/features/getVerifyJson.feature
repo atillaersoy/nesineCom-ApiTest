@@ -1,6 +1,6 @@
 Feature:Get /Iddaa/PopularBetsModal and Verify JSON schema.
   Background:
-  * url getUri
+  * url 'https://www.nesine.com'
   * def jsonScheme = read('classpath:/json/scheme.json')
 
   Scenario: get /Iddaa/PopularBetsModal and Verify JSON schema.

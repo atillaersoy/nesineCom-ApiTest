@@ -1,12 +1,11 @@
 Feature:Login And Get Public Feeds
   Background:
-    * url getUri
-
-  Scenario: Login And Get Public Feeds
+    * url 'https://www.nesine.com'
+  Scenario Outline: Login And Get Public Feeds
     Given path '/Auth/Login'
     * header Content-Type = 'application/x-www-form-urlencoded; charset=UTF-8'
     * header Referer = 'https://www.nesine.com/'
-    And request 'i=NESİNECOMKADİ&pw=NESİNECOMSİFRE&rme=false&rn=532963'
+    And request 'i=<username>&pw=<password>&rme=false&rn=532963'
     When method post
     Then status 200
     And print response
@@ -23,3 +22,10 @@ Feature:Login And Get Public Feeds
     When method post
     Then status 200
     And match response.totalitemcount == 100
+
+    Examples:
+      | username       | password    |
+      | USERNAMEHERE     | PASSWORDHERE  |
+#     | non working username     | non working password  |
+
+# please set credentials and uncomment out lines 28 and 29
